@@ -1,1 +1,20 @@
-<view>我是首页</view>
+<!-- 1.轮播图 -->
+<w-swiper list="{{swiperList}}" />
+<!-- 2.推荐数据展示 -->
+<w-recommend recommendList="{{recommendList}}" />
+<!-- 3.展示本周流行 -->
+<w-popurlar />
+<!-- 4.tabbar -->
+<w-tabbar tabbarList="{{tabbarList}}" bind:tabbar-info="getTabbarInfo" />
+
+
+<!-- 5.展示tabbar下的页面 -->
+<view>
+  <block wx:for="{{goods[currentType].list}}" wx:key="index">
+    <view>{{item.title}}</view>
+    <view>--------------------------------</view>
+  </block>
+</view>
+
+<!-- 撑高home页面  结束后需删除!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<view class="del"></view>

@@ -1,1 +1,7 @@
 /* pages/home/home.wxss */
+
+
+/* 等下删除 */
+.del{
+  height:200px; 
+}
