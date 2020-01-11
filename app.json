@@ -1,0 +1,7 @@
+{
+  "pages": [
+    "pages/home/home"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
