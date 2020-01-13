@@ -1,0 +1,45 @@
+/* pages/detail/childCpn/w-goodsParams/w-goodsParams.wxss */
+.good-params{
+  padding: 28rpx 50rpx 52rpx;
+  border-bottom:16rpx solid #eee; 
+  font-size: 28rpx;
+  color: #555;
+}
+
+.good-params .top{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+}
+.good-params .rule{
+  display: flex;
+  padding-top: 30rpx;
+  padding-bottom:30rpx;
+  border-bottom:2rpx solid #eee;
+ 
+}
+.good-params .rule text{
+  flex: 1;
+}
+
+.good-params .bottom{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  margin-top: 40rpx;
+}
+
+.good-params .info{
+  display: flex;
+  padding-top: 30rpx;
+  padding-bottom:30rpx;
+  border-bottom:2rpx solid #eee;
+}
+.good-params .info text:first-child{
+  flex: 1;
+}
+.good-params .info text:last-child{
+  flex: 2;
+  color: #ff5777;
+  font-size: 26rpx;
+}

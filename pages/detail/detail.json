@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "w-swiper":"/components/w-swiper/w-swiper",
+    "w-goodsitem": "/components/w-goodsitem/w-goodsitem",
+    "w-backtop": "/components/w-backtop/w-backtop",
+
+
+    "w-goods": "./childCpn/w-goods/w-goods",
+    "w-shopinfo": "./childCpn/w-shopInfo/w-shopInfo",
+    "w-detailinfo": "./childCpn/w-detailInfo/w-detailInfo",
+    "w-goodsparams": "./childCpn/w-goodsParams/w-goodsParams",
+    "w-usercomment": "./childCpn/w-userComment/w-userComment",
+     "w-settlebar": "./childCpn/w-settleBar/w-settleBar"
+  }
+}

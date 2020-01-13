@@ -1,0 +1,19 @@
+<!--pages/detail/childCpn/w-goods/w-goods.wxml-->
+<view class="goods">
+  <view class="title">{{goods.title}}</view>
+  <view class="more-price">
+    <text class="now-price">{{goods.newPrice}}</text>
+    <text class="old-price">￥{{goods.lowPrice}}</text>
+    <text class="descount">{{goods.discountDesc}}</text>
+  </view>
+  <view class="top-info">
+    <text>{{goods.columns[0]}}</text>
+    <text>{{goods.columns[1]}}</text>
+    <text>{{goods.services[ goods.services.length - 1 ].name}}</text>
+  </view>
+  <view class="bottom-info">
+    <view class="left"><image src="{{goods.services[0].icon || goods.services[1].icon}}" mode="widthFix"></image><text>{{goods.services[0].name}}</text></view>
+    <view class="center"><image src="{{goods.services[1].icon}}" mode="widthFix"></image><text>{{goods.services[1].name}}</text></view>
+    <view class="right"><image src="{{goods.services[2].icon}}" mode="widthFix"></image><text>{{goods.services[2].name}}</text></view>
+  </view>
+</view>

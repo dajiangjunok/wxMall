@@ -1,0 +1,15 @@
+/* pages/detail/detail.wxss */
+ .recommend{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 150rpx;
+}
+.recommend w-goodsitem{ 
+  position: relative;
+  box-sizing: border-box;
+  width: 46%;
+  /* padding-bottom:80rpx; */
+}
+
+ 

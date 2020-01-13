@@ -1,0 +1,8 @@
+<!--pages/detail/childCpn/w-detailInfo/w-detailInfo.wxml-->
+<view class="detail-info">
+  <view class="desc">{{detailInfo.desc}}</view>
+  <view class="key">{{detailInfo.detailImage[0].key}}</view>
+  <block  wx:for="{{detailInfo.detailImage[0].list}}" wx:key="index">
+    <image class="img" src="{{item}}" wx:key="index" mode="widthFix" /> 
+  </block>
+</view>

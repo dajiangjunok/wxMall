@@ -1,0 +1,20 @@
+<!--pages/detail/childCpn/w-goodsParams/w-goodsParams.wxml-->
+<view class="good-params">
+  <view class="top">
+    <block wx:for="{{goodsParams.rule.tables[0]}}" wx:key="index">
+      <view class="rule">
+        <block  wx:for="{{item}}" wx:key="index">
+            <text>{{item}}</text>
+        </block>
+      </view>
+    </block>
+  </view>
+  <view class="bottom">
+   <block wx:for="{{goodsParams.info.set}}" wx:key="index">
+      <view class="info">
+        <text>{{item.key}}</text>
+        <text>{{item.value}}</text>
+      </view>
+   </block>
+   </view>
+</view>

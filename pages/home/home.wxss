@@ -25,3 +25,11 @@
   width: 46%;
   /* padding-bottom:80rpx; */
 }
+
+.backtopposition{
+  position: fixed;
+  z-index:999;
+  bottom: 30rpx!important;
+  right: 30rpx;
+  width: 100rpx;
+}

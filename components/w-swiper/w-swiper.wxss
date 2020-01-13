@@ -1,7 +1,11 @@
 /* components/w-swiper/w-swiper.wxss */
 .swiper{
-  height:391.6rpx!important;
+  height:391.6rpx;
 }
+.swiper.height{
+  height:600rpx!important;
+}
+
 .swiper-img{
   width: 100%;
   height: 100%;

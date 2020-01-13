@@ -11,14 +11,14 @@
 
 
 <!-- 5.展示tabbar下的页面 -->
-<view class="goods-container">
-  <block wx:for="{{goods[currentType].list}}" wx:key="index">
-    <w-goodsitem goodsitemlist="{{item}}" wx:if="{{ goodsitemlist.length !== 0 }}" />
+<view class="goods-container" >
+  <block wx:for="{{goods[currentType].list}}" wx:key="index"  >
+    <w-goodsitem bindtap="goodsItemClick" data-iid="{{item.iid}}" goodsitemlist="{{item}}" wx:if="{{ goodsitemlist.length !== 0 }}" />
   </block>
 </view>
 
 <!-- 6.回到顶部按钮 组件不能使用 hidden  -->
-<w-backtop wx:if="{{isShowBackTop}}" />
+<w-backtop wx:if="{{isShowBackTop}}" backtopposition="backtopposition" />
 
 
  

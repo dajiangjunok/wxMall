@@ -1,11 +1,11 @@
 <!--components/w-goodsitem/w-goodsitem.wxml-->
 <view class="goods-item">
-    <image src="{{goodsitemlist.show.img}}" mode="widthFix"></image>
+    <image src="{{goodsitemlist.show.img}}" mode="widthFix" /> 
     <view class="goods-item-info">
       <view class="title">{{goodsitemlist.title}}</view>
       <view class="info">
         <text class="price">￥{{goodsitemlist.price}}</text>
-        <image class="icon" src="/asset/img/common/collect.png" mode="widthFix"></image>
+        <image class="icon" src="/asset/img/common/collect.png" mode="widthFix" lazy-load />
         <text class="cfav">{{goodsitemlist.cfav}}</text>
       </view>
     </view>  

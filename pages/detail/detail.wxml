@@ -1,0 +1,22 @@
+<!--pages/detail/detail.wxml-->
+<w-swiper list="{{swiperList}}" isHeight="{{true}}"></w-swiper>
+<!-- goods页面，包括商品标题  价格，退换货等 -->
+<w-goods goods="{{goods}}" />
+<!-- 店铺信息 -->
+<w-shopinfo shopInfo="{{shopInfo}}" />
+<!-- 详情信息的展示 -->
+<!-- <w-detailinfo detailInfo="{{detailInfo}}" /> -->
+<!-- 参数信息的展示 -->
+<w-goodsparams goodsParams="{{goodsParams}}" />
+<!-- 用户评论界面展示 -->
+<w-usercomment userComments="{{userComments}}" />
+<!-- 推荐界面 -->
+<view class="recommend">
+  <block  wx:for="{{recommends}}" wx:key="index">
+    <w-goodsitem goodsitemlist="{{item}}" />
+  </block>
+</view>
+<!-- 结算界面 -->
+<w-settlebar />
+<!-- 引入返回顶部按钮 -->
+<w-backtop wx:if="{{isShowBackTop}}" />

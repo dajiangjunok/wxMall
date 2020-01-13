@@ -2,7 +2,7 @@
 .back-top{
   position: fixed;
   z-index:999;
-  bottom: 40rpx;
+  bottom: 120rpx;
   right: 30rpx;
   width: 100rpx;
 }

@@ -1,0 +1,21 @@
+<!--pages/detail/childCpn/w-settleBar/w-settleBar.wxml-->
+<view class="settle-bar">
+  <view class="s-left">
+    <view class="service">
+      <image src="/asset/img/detail/service.png"  mode="widthFix" /> 
+      <view>客服</view>
+    </view>
+     <view class="service">
+      <image src="/asset/img/detail/shop.png" mode="widthFix" /> 
+      <view>店铺</view>
+    </view>
+     <view class="service">
+      <image src="/asset/img/detail/colect.png" mode="widthFix" /> 
+      <view>收藏</view>
+    </view>
+  </view>
+  <view class="s-right">
+    <text>加入购物车</text>
+    <text>购买</text>
+  </view>
+</view>

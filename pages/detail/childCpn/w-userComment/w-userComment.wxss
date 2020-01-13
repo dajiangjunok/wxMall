@@ -1,0 +1,36 @@
+/* pages/detail/childCpn/w-userComment/w-userComment.wxss */
+.u-comment{
+  padding: 28rpx 36rpx 52rpx;
+  border-bottom:16rpx solid #eee; 
+}
+.u-title{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 36rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #555;
+}
+.u-info{
+  margin: 36rpx 0;
+  color: #666;
+}
+.u-info text{
+  margin-left: 30rpx;
+  font-size: 34rpx;
+}
+.u-info image{
+  width: 80rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.u-comment .content,
+.u-comment .created,
+.u-comment .style,
+.u-comment .explain{
+  padding-bottom: 36rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+.u-comment .explain{
+  margin-top: 36rpx;
+}

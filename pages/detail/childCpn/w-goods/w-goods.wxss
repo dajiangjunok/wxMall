@@ -1,0 +1,54 @@
+/* pages/detail/childCpn/w-goods/w-goods.wxss */
+.goods{
+  padding: 28rpx 16rpx 52rpx;
+  border-bottom:16rpx solid #eee; 
+}
+.goods .title{
+  font-size: 36rpx;
+}
+.goods .more-price {
+  margin-top: 10rpx;
+
+}
+.goods .more-price .now-price{
+  color:#ff5777;
+  font-size: 36rpx;
+}
+
+.goods .more-price .old-price{
+  margin-left:12rpx;
+  font-size: 28rpx;
+  color: #ccc;
+  text-decoration: line-through;
+}
+.goods .more-price .descount{
+  position: relative;
+  left:10rpx;
+  top: -16rpx;
+  padding: 0 8rpx;
+  background-color: #ff5777;
+  color: #fff;
+  border-radius: 18rpx;
+}
+
+.goods .top-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  padding-bottom: 8rpx;
+  border-bottom: 2rpx solid #eee;
+  font-size: 28rpx;
+  color: #ccc;
+}
+.goods .bottom-info{
+  display: flex;
+  justify-content: space-between;
+  margin-top:  24rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+
+.bottom-info image {
+  width: 38rpx;
+  vertical-align: middle;
+}

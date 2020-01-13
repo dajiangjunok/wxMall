@@ -7,6 +7,11 @@ Component({
     list:{
       type:Array,
       value:[]
+    },
+    // 判断是不是详情页的轮播，是的话 添加height类 让他变高点
+    isHeight:{
+      type:Boolean,
+      value:false
     }
     // "indicator-dots":{
     //   type: Boolean,

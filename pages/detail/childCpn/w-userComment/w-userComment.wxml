@@ -1,0 +1,17 @@
+<!--pages/detail/childCpn/w-userComment/w-userComment.wxml-->
+<view class="u-comment">
+  <view class="u-title">
+    <text>用户评论</text>
+    <text>更多</text>
+  </view>
+  <block wx:for="{{userComments.list}}" wx:key="index">
+    <view class="u-info">
+       <image src="{{item.user.avatar}}" mode="widthFix"></image>
+       <text>{{item.user.uname}}</text>
+    </view>
+    <view class="content">{{item.content}}</view>
+    <text class="created">{{item.created}}</text>
+    <text class="style">{{item.style}}</text>
+    <view class="explain">{{item.explain}}</view>
+  </block>
+</view>

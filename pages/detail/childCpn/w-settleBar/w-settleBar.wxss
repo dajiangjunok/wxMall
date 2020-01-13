@@ -1,0 +1,42 @@
+/* pages/detail/childCpn/w-settleBar/w-settleBar.wxss */
+.settle-bar image{
+  width: 50rpx;
+}
+.settle-bar{
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120rpx;
+  background-color: #fff;
+}
+.s-left, .s-right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.s-left{
+  padding-top:16rpx;
+}
+.s-left > view{
+  flex: 1;
+  text-align: center;
+}
+
+.s-right{
+display: flex;
+line-height: 120rpx;
+text-align: center;
+}
+.s-right text:first-child{
+  flex:1;
+  background-color: #FFE6E8;
+  color: #ff5777;
+}
+.s-right text:last-child{
+  flex:1;
+  background-color: #FF537C;
+  color: #fff;
+}

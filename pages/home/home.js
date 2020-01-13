@@ -36,7 +36,9 @@ Page({
     // tabbar 原始距离顶部的距离
     distanceTop: 0,
     // tabbar是否吸顶
-    isTabBarFixed: false
+    isTabBarFixed: false,
+    // iid 是点击详情的iid
+    iid: ''
   },
 
   // ---------------------------事件监听相关函数--------------------------------
@@ -54,25 +56,36 @@ Page({
     query.exec(function(res) {
       _this.data.distanceTop = res[0].top
     })
-
-
   },
-
+  // 点击goodsitem  开始跳转
+  goodsItemClick(event) {
+    const iid = event.currentTarget.dataset.iid
+    this.setData({
+      iid
+    })
+    // 进行详情页的路由跳转
+    wx.navigateTo({
+      url: `/pages/detail/detail?iid=${iid}`
+  })
+  },
   // ---------------------------网络请求相关函数---------------------------------
   // 请求轮播图，推荐数据的  函数
   _getHomeMultidata() {
     getHomeMultidata().then(res => {
       const data = res.data.data
       // 1.拿到轮播图数据和推荐数据
-      const swiperList = data.banner.list
+      let swiperList = data.banner.list
+      swiperList = swiperList.map(item =>{
+        return item.image
+      })
       const recommendList = data.recommend.list
-      // console.log(recommendList)
       this.setData({
         swiperList,
         recommendList
       })
     })
   },
+
   // 请求首页tab下的数据函数
   _getHomeGoods(type) {
     let page = this.data.goods[type].page + 1
@@ -91,6 +104,7 @@ Page({
       })
     })
   },
+   
 
   // ----------------------------------------页面操作的一些函数----------
   doBackTop(option) {

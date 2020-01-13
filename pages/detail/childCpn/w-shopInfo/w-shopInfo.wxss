@@ -1,0 +1,94 @@
+/* pages/detail/childCpn/w-shopInfo/w-shopInfo.wxss */
+
+.shop-info {
+  padding: 28rpx 16rpx 52rpx;
+  border-bottom: 16rpx solid #eee;
+}
+
+.logo image {
+  width: 100rpx;
+  border-radius: 50%;
+  border: 1px solid #555;
+  vertical-align: middle;
+}
+
+.logo text {
+  margin-left: 18rpx;
+  font-size: 38rpx;
+  color: #666;
+}
+
+.shop-info .info {
+  display: flex;
+  margin: 40rpx 0;
+  color: #666;
+  /* text-align: center; */
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.left .sells view:first-child, .left .goods view:first-child {
+  margin-bottom: 10rpx;
+  font-size: 38rpx;
+}
+
+.left .goods {
+  padding-right: 30rpx;
+  border-right: 1px solid #ccc;
+}
+
+.right {
+  flex: 1;
+  /* display: flex; */
+}
+
+.right view {
+  display: flex;
+  margin: 12rpx 0;
+}
+
+.score-left {
+  flex: 2;
+}
+
+.score-center {
+  flex: 1;
+  color: lightgreen;
+}
+
+.score-right {
+  flex: 1;
+  color: #fff;
+}
+
+.score-right text {
+  background-color: lightgreen;
+}
+
+.score-right text.high {
+  background-color: red;
+}
+
+.score-center.red {
+  color: red;
+}
+
+.enter {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 0;
+  padding: 12rpx 80rpx;
+  background-color: #eee;
+  border-radius: 16rpx;
+  transform: translateX(-50%);
+  font-size: 28rpx;
+  color: #666;
+}
