@@ -1,7 +1,27 @@
-/* pages/home/home.wxss */
+ .tabbar-container{
+   /* 包裹一层为后续固定tabbar
+    * 组件脱离文档流会导致页面结构变化
+    */
+    height: 78.4rpx;
+    width: 100%;
+ }
+ .fixed{
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 3;
+   width: 100%;
+   background-color: #fff;
+ }
 
-
-/* 等下删除 */
-.del{
-  height:200px; 
+ .goods-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.goods-container w-goodsitem{ 
+  position: relative;
+  box-sizing: border-box;
+  width: 46%;
+  /* padding-bottom:80rpx; */
 }

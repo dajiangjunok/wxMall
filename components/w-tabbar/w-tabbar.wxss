@@ -1,16 +1,18 @@
 /* components/w-tabbar/w-tabbar.wxss */
 .container{
   display: flex;
+  height: 78.4rpx;
   text-align: center;
-  margin-bottom: 40rpx;
-  font-size: 14px;
+  font-size: 28rpx;
   color: #555;
+  
 }
 .item{
+  padding-top: 16rpx;
   flex:1;
 }
 .active text{
-  padding: 16rpx;
+  padding: 10rpx;
   color: #ff5777;
   border-bottom:6rpx solid #ff5777;
 }

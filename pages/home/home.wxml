@@ -1,20 +1,24 @@
 <!-- 1.轮播图 -->
 <w-swiper list="{{swiperList}}" />
 <!-- 2.推荐数据展示 -->
-<w-recommend recommendList="{{recommendList}}" />
+<w-recommend recommendList="{{recommendList}}" bind:image-onload="imgLoading" />
 <!-- 3.展示本周流行 -->
 <w-popurlar />
 <!-- 4.tabbar -->
-<w-tabbar tabbarList="{{tabbarList}}" bind:tabbar-info="getTabbarInfo" />
+<view class="tabbar-container">
+  <w-tabbar class="{{isTabBarFixed?'fixed':''}}" id="tabbar" tabbarList="{{tabbarList}}" bind:tabbar-info="getTabbarInfo" />
+</view>
 
 
 <!-- 5.展示tabbar下的页面 -->
-<view>
+<view class="goods-container">
   <block wx:for="{{goods[currentType].list}}" wx:key="index">
-    <view>{{item.title}}</view>
-    <view>--------------------------------</view>
+    <w-goodsitem goodsitemlist="{{item}}" wx:if="{{ goodsitemlist.length !== 0 }}" />
   </block>
 </view>
 
-<!-- 撑高home页面  结束后需删除!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-<view class="del"></view>
+<!-- 6.回到顶部按钮 组件不能使用 hidden  -->
+<w-backtop wx:if="{{isShowBackTop}}" />
+
+
+ 

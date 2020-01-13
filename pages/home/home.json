@@ -2,11 +2,11 @@
   "usingComponents": {
     "w-swiper":"../../components/w-swiper/w-swiper",
     "w-tabbar":"../../components/w-tabbar/w-tabbar",
+    "w-goodsitem":"../../components/w-goodsitem/w-goodsitem",
+    "w-backtop": "../../components/w-backtop/w-backtop",
     
     "w-recommend": "./childCpns/w-recommend/w-recommend",
     "w-popurlar": "./childCpns/w-popular/w-popular"
-  },
-  "window": {
-    "navigationBarTitleText": "购物街"
   }
+   
 }

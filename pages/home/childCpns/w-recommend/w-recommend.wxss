@@ -8,7 +8,7 @@
   border-bottom: 16rpx solid #eee;
 }
  .recommend-item{
-   font-size: 12px;
+   font-size: 24rpx;
    color: #555;
  }
 .recommend-item image{

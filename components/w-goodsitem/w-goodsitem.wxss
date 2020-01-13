@@ -1,0 +1,62 @@
+/* components/w-goodsitem/w-goodsitem.wxss */
+
+.goods-item {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-top: 16rpx;
+  margin-bottom: 80rpx;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.goods-item image {
+  width: 100%;
+  border-radius: 16rpx;
+}
+.goods-item-info{
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   bottom: 6rpx;
+   width: 100%;
+  
+}
+.goods-item .info {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.goods-item .title {
+  font-size: 30rpx;
+  color: #555;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.goods-item .price {
+  flex: 1;
+  font-size: 34rpx;
+  color: #ff5777;
+  text-align: right;
+}
+
+.goods-item .cfav {
+  flex: 1;
+  padding-left: 94rpx;
+  font-size: 34rpx;
+  color: #555;
+  text-align: left;
+}
+
+.goods-item .info .icon {
+  position: absolute;
+  left: 198rpx;
+  top: 16rpx;
+  width: 24rpx;
+  height: 24rpx;
+}

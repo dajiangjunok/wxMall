@@ -1,0 +1,2 @@
+<!--components/w-backtop/w-backtop.wxml-->
+<image class="back-top" src="/asset/img/common/top.png" mode="widthFix" bindtap="backTop" /> 
