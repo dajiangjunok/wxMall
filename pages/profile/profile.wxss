@@ -1,1 +1,82 @@
-/* pages/profile/profile.wxss */
+.header {
+  position: relative;
+  width: 750rpx;
+  height: 260rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff5777;
+}
+
+.user-img {
+  overflow: hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 10rpx;
+  margin-top: 30rpx;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header .info {
+  color: #fff;
+}
+
+.header .info .user-name {
+  padding-right: 50rpx;
+}
+
+/* content部分 */
+
+.content {
+  display: flex;
+  text-align: center;
+  color: #666;
+}
+
+.item {
+  box-sizing: border-box;
+  flex: 1;
+  padding: 40rpx 0;
+  border-bottom: 16rpx solid #eee;
+}
+
+.item:nth-child(2) {
+  border-left: 2rpx solid #eee;
+  border-right: 2rpx solid #eee;
+}
+
+.item .count {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: red;
+}
+
+.item .title {
+  padding-top: 16rpx;
+}
+
+/* menu部分的样式 */
+
+.menu {
+  border-bottom: 16rpx solid #eee;
+  color: #666;
+  font-size: 34rpx;
+}
+
+.menu view {
+  position: relative;
+  padding: 30rpx 0 30rpx 100rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.menu image {
+  position: absolute;
+  left: 10rpx;
+  top: 23rpx;
+  bottom: 0;
+  width: 60rpx;
+  height: 60rpx;
+}

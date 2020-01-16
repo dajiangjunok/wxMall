@@ -1,0 +1,9 @@
+<!--pages/category/childCpn/w-rightContent/w-rightContent.wxml-->
+<view class="subcategory-container">
+  <block wx:for="{{subCategory.list}}" wx:key="index">
+    <view class="subcategory-item">
+      <image src="{{item.image}}" mode="widthFix" lazy-load />
+      <view class="title">{{item.title}}</view>
+    </view>
+  </block>
+</view>

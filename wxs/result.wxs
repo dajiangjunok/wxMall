@@ -1,0 +1,46 @@
+// 总价的 计算函数
+ var resultPrice = function(arr=[]) {
+   var result = 0
+   for (var i = 0; i < arr.length; i++){
+     if (arr[i].isChecked){
+       result = result + arr[i].cartPrice * arr[i].count 
+     }
+   }
+  
+   return result.toFixed(2)
+ }
+
+// 总个数的计算函数
+ var resultCount= function(arr=[]){
+   var count = 0
+   for (var i = 0; i < arr.length; i++) {
+     if (arr[i].isChecked) {
+       count = count + arr[i].count
+     }
+   }
+   return count
+ }
+
+// 全选按钮是否显示计算函数
+// 此处只要购物车中没有一个isChecked 为true则 不要选中，其他默认是选中
+var isChecked = function(arr = []){
+  var check = false
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].isChecked) {
+      check = true
+    }
+  }
+  return check
+}
+
+// 将传入的数保留两位小数
+var fixed= function(num=0){
+ return num.toFixed(2)
+}
+
+ module.exports = {
+   resultPrice: resultPrice,
+   resultCount: resultCount,
+   isChecked: isChecked,
+   fixed: fixed
+ }

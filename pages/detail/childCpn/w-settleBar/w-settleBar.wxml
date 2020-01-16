@@ -15,7 +15,7 @@
     </view>
   </view>
   <view class="s-right">
-    <text>加入购物车</text>
+    <text bindtap="getCart">加入购物车</text>
     <text>购买</text>
   </view>
 </view>

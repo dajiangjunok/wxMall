@@ -1,1 +1,4 @@
 /* pages/cart/cart.wxss */
+.cart{
+  padding-bottom: 90rpx;
+}

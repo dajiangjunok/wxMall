@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-cartitem":"./childCpn/w-cartitem/w-cartitem",
+    "w-settlebar":"./childCpn/w-settleBar/w-settleBar"
+  }
 }

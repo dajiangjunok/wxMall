@@ -1,0 +1,8 @@
+<!--pages/category/childCpn/w-rightNav/w-rightNav.wxml-->
+<view class="recommend-nav">
+  <block wx:for="{{recommendNav}}" wx:key="index">
+    <view class="nav-item {{currentIndex===index?'active':''}}" bindtap="navClick" data-index="{{index}}" >
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>

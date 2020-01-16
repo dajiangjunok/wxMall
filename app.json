@@ -1,14 +1,14 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/detail/detail",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/profile/profile",
-    "pages/detail/detail"
+    "pages/profile/profile"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
-    "navigationBarTitleText": "小程序",
+    "navigationBarTitleText": "购物街",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": false
   },

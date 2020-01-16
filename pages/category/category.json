@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-leftnav":"./childCpn/w-leftNav/w-leftNav",
+    "w-rightcontent": "./childCpn/w-rightContent/w-rightContent",
+    "w-rightnav": "./childCpn/w-rightNav/w-rightNav",
+
+    "w-goodsitem":"../../components/w-goodsitem/w-goodsitem"
+  }
 }

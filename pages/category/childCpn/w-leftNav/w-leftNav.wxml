@@ -1,0 +1,10 @@
+<!--pages/category/childCpn/w-leftNav/w-leftNav.wxml-->
+<scroll-view class="scroll" scroll-y scroll-with-animation>
+  <view class="left-nav">
+    <block wx:for="{{category.list}}" wx:key="index">
+      <view class="nav-item {{currentIndex===index?'active':''}}" 
+            data-index="{{index}}" 
+            bindtap="navClick">{{item.title}}</view>
+    </block>
+  </view>
+</scroll-view >

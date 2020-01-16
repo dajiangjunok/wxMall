@@ -1,1 +1,42 @@
 /* pages/category/category.wxss */
+
+.category {
+  display: flex;
+}
+
+.left-nav {
+  flex: 1;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.right-content {
+  flex: 3;
+}
+
+.scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.recommend-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.recommend-content w-goodsitem {
+  position: relative;
+  box-sizing: border-box;
+  width: 46%;
+  /* padding-bottom:80rpx; */
+}
+
+.size {
+  font-size: 28rpx!important;
+}
+
+.c-icon{
+  left: 144rpx!important;
+  top: 12rpx!important;
+}

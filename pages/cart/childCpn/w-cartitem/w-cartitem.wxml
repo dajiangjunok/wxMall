@@ -1,0 +1,20 @@
+<view class="cart-item">
+  <view class="tick-container" bindtap="checkedClick" data-checked="{{!cartitem.isChecked}}">
+    <view class="container {{cartitem.isChecked?'checked':''}}">
+      <image class="tick" src="/asset/img/cart/tick.png" mode="widthFix" />
+    </view>
+  </view>
+  <image class="cart-img" src="{{cartitem.cartImage}}" mode="widthFix" bindtap="itemClick" />
+  <view class="info" bindtap="itemClick">
+    <view class="title">{{cartitem.cartTitle}}</view>
+    <view class="desc">{{cartitem.cartInfo}}</view>
+    <view class="settle">
+      <text class="price">￥{{cartitem.cartPrice}}</text>
+      <view>
+        <button size="mini"  catchtap="subCount">-</button>
+        <text class="count">{{cartitem.count}}</text>
+        <button size="mini" catchtap="addCount">+</button>
+      </view>
+    </view>
+  </view>
+</view>

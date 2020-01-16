@@ -1,0 +1,49 @@
+/* pages/cart/childCpn/w-settleBar/w-settleBar.wxss */
+/* 选择框的样式----------------- */
+.container{
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 4rpx solid #ccc;
+}
+image.tick{
+  width: 40rpx;
+}
+.checked{
+   background-color: #ff5777!important;
+}
+ /* ----------------- */
+
+.car-settle{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display:flex;
+  align-items: center;
+  height: 90rpx;
+  background-color: rgb(245, 245, 245);
+  font-size: 28rpx;
+  
+}
+.tick-container{
+flex:1;
+display: flex;
+justify-content: space-start;
+}
+.tick-container text{
+   margin: 8rpx 0 0 8rpx;
+}
+.result-price{
+flex:2;
+margin-left:20rpx;
+color: #ff5777;
+}
+.result-count{
+flex:1;
+background-color: #ff5777;
+color: #fff;
+line-height: 90rpx;
+text-align: center;
+}

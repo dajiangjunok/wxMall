@@ -50,5 +50,6 @@
 
 .bottom-info image {
   width: 38rpx;
+  height: 38rpx;
   vertical-align: middle;
 }

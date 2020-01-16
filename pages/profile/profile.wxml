@@ -1,2 +1,43 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<wxs src="../../wxs/result.wxs" module="userInfo" />
+<view class="header">
+  <!-- 获取用户微信头像 -->
+  <view class="user-img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="info">
+    <!-- 获取用户微信名字 -->
+    <open-data type="userNickName" class="user-name" />
+    <open-data type="userCity" class="user-city" lang="zh_CN" />
+  </view>
+</view>
+<view class="content">
+  <block wx:for="{{userContent}}" wx:key="index">
+    <view class="item">
+      <view>
+        <text class="count">{{userInfo.fixed(item.count)}}</text>
+        <text>{{item.unit}}</text>
+      </view>
+      <view class="title">{{item.title}}</view>
+    </view>
+  </block>
+</view>
+
+<view class="menu">
+  <view>
+    <image src="/asset/img/profile/msg.png"></image>
+    我的消息
+  </view>
+  <view>
+    <image src="/asset/img/profile/integral.png"></image>
+    积分商城
+  </view>
+  <view>
+    <image src="/asset/img/profile/vip.png"></image>
+    会员卡
+  </view>
+  <view bindtap="cartClick">
+    <image src="/asset/img/profile/cart.png"></image>
+    我的购物车
+  </view>
+</view>

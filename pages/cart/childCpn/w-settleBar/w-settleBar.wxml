@@ -1,0 +1,12 @@
+<!--pages/cart/childCpn/w-settleBar/w-settleBar.wxml-->
+<wxs src="../../../../wxs/result.wxs" module="info"  />
+<view class="car-settle">
+  <view class="tick-container">
+    <view class="container {{info.isChecked(carts)?'checked':''}}" bindtap="allCheckedClick">
+      <image class="tick" src="/asset/img/cart/tick.png" mode="widthFix" />
+    </view>
+    <text>全选</text>
+  </view>
+  <view class="result-price">合计：￥{{info.resultPrice(carts)}}</view>
+  <view class="result-count">去计算{{info.resultCount(carts)}}</view>
+</view>

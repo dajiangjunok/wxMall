@@ -1,2 +1,24 @@
 <!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<!-- 左侧导航 -->
+<view class="category">
+  <w-leftnav class="left-nav" category="{{category}}" bind:subCategoryIndex="getSubCategory" />
+  <!-- 右侧信息 -->
+  <view class="right-content">
+    <!-- 右侧内容 -->
+    <scroll-view class="scroll" scroll-y>
+      <w-rightcontent subCategory="{{subCategory}}" />
+      <!-- 右侧推荐 -->
+      <view class="c-recommend">
+        <!-- 右侧推荐的导航 -->
+        <w-rightnav recommendNav="{{recommendNav}}" bind:navClick="navClick" />
+        <!-- 右侧推荐的数据 -->
+        <view class="recommend-content">
+          <block wx:for="{{recommendList}}" wx:key="index">
+            <w-goodsitem goodsitemlist="{{item}}" minisize="size" c-icon="c-icon" 
+                          bindtap="recommendClick" data-index="{{index}}" />
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+/* pages/category/childCpn/w-leftNav/w-leftNav.wxss */
+.scroll{
+  height: 100vh;
+  overflow: hidden;
+}
+.nav-item{
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #f2f2f2;
+}
+
+.active{
+  border-left: 6rpx solid #ff5777;
+  color: #ff5777;
+  font-weight: 700;
+}

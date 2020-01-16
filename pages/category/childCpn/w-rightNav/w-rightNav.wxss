@@ -1,0 +1,16 @@
+/* pages/category/childCpn/w-rightNav/w-rightNav.wxss */
+.recommend-nav{
+  display: flex;
+  font-size: 34rpx;
+  margin: 0 32rpx;
+}
+.nav-item{
+  flex: 1;
+  text-align: center;
+}
+
+.active text{
+  padding: 6rpx 6rpx;
+  color: #ff5777;
+  border-bottom:4rpx solid #ff5777
+}
